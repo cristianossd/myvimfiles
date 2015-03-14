@@ -55,17 +55,6 @@ map <c-l> <c-w>l
 map <D-[> <c-w>h
 map <D-]> <c-w>l
 map <silent> <leader>v :source ~/.vimrc<cr>:filetype detect<cr>:exe ":echo 'vimrc reloaded'"<cr>
-nmap <silent> <S-D-CR> :ZoomWin<CR>
-nmap <leader>b :CtrlPBuffer<cr>
-nmap <leader>C :ClearAllCtrlPCaches<cr>
-nmap <leader><space> :call whitespace#strip_trailing()<cr>
-imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
-smap <C-J> <Plug>snipMateNextOrTrigger
-map <C-c>b :buffer<Space>
-map bd :bd<CR>
-map <C-c>/ <Leader>c<space>
-imap <TAB> <Plug>snipMateNextOrTrigger
-smap <TAB> <Plug>snipMateNextOrTrigger
 
 noremap 1 :e! #1<CR>
 noremap 2 :e! #2<CR>
