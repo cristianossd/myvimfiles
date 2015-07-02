@@ -25,8 +25,7 @@ set incsearch " search as you type
 set smartcase " case-sensitive search if any caps
 
 set laststatus=2 " always show statusline
-set list " show trailing whitespace
-set listchars=tab:▸\ ,trail:▫
+set listchars=trail:▫
 set number " show line numbers
 set ruler " show where you are
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc,*.pyc
@@ -56,17 +55,6 @@ map <D-[> <c-w>h
 map <D-]> <c-w>l
 map <silent> <leader>v :source ~/.vimrc<cr>:filetype detect<cr>:exe ":echo 'vimrc reloaded'"<cr>
 
-noremap 1 :e! #1<CR>
-noremap 2 :e! #2<CR>
-noremap 3 :e! #3<CR>
-noremap 4 :e! #4<CR>
-noremap 5 :e! #5<CR>
-noremap 6 :e! #6<CR>
-noremap 7 :e! #7<CR>
-noremap 8 :e! #8<CR>
-noremap 9 :e! #9<CR>
-noremap 0 :e! #10<CR>
-
 filetype plugin on
 
 " Emmet settings
@@ -83,9 +71,8 @@ set cindent
 " Font and color scheme
 set guifont=Monospace\ 9
 
-" uses vividchalk colorscheme
-syntax enable
-colorscheme vividchalk
+" uses colorscheme
+syntax on
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1
@@ -107,6 +94,3 @@ map <Leader>f :b
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_javascript_checkers = ['jslint', 'gjslint']
-
-" enable close HTML tags
-au Filetype jinja,xhtml,html,xml,xsl so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
