@@ -73,6 +73,7 @@ set guifont=Monospace\ 9
 
 " uses colorscheme
 syntax on
+colorscheme monochrome
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1
