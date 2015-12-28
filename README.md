@@ -1,6 +1,6 @@
 # My vim files
 
-I will improve it someday ... at least I think.
+You just need to download `install.sh` script and give proper permissions `chmod u+x install.sh`. Then, run then script `./install.sh` and be happy!
 
 ### Plugins
 
@@ -13,3 +13,5 @@ I will improve it someday ... at least I think.
 ### Colors
 
 - [Monochrome](https://github.com/fxn/vim-monochrome)
+
+I will improve it someday ... at least I think.
