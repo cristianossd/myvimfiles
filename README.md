@@ -1,6 +1,10 @@
 # My vim files
 
-You just need to download `install.sh` script and give proper permissions `chmod u+x install.sh`. Then, run then script `./install.sh` and be happy!
+### Install
+    git clone https://github.com/cristianossd/myvimfiles ~/.vim
+    cd ~/.vim
+    git submodule update --init --recursive
+Now enjoy it!
 
 ### Plugins
 
