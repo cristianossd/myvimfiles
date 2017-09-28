@@ -56,6 +56,7 @@ map <D-]> <c-w>l
 map <silent> <leader>v :source ~/.vimrc<cr>:filetype detect<cr>:exe ":echo 'vimrc reloaded'"<cr>
 
 filetype plugin on
+filetype plugin indent on
 
 " Emmet settings
 let g:user_emmet_leader_key='<C-Z>'
