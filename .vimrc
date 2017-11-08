@@ -28,7 +28,7 @@ set laststatus=2 " always show statusline
 set listchars=trail:▫
 set number " show line numbers
 set ruler " show where you are
-set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc,*.pyc
+set wildignore=log/**,node_modules/**,bower_components/**,target/**,tmp/**,*.rbc,*.pyc
 set wildmode=longest,list,full
 
 " enable basic mouse behavior such as resizing buffers.
@@ -64,6 +64,7 @@ let g:user_emmet_mode='a'
 
 " CtrlP settings
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_custom_ignore = '\v[\/](log|bower_components|tmp|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 " Indent
 set autoindent
@@ -109,3 +110,6 @@ let g:clojure_fuzzy_indent_blacklist = ['-fn$', '\v^with-%(meta|out-str|loading-
 let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn'
 let g:clojure_align_multiline_strings = 1
 let g:clojure_align_subforms = 1
+
+" fast scrolling in mac
+set ttyfast
