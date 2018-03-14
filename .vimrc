@@ -116,5 +116,8 @@ let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,
 let g:clojure_align_multiline_strings = 1
 let g:clojure_align_subforms = 1
 
+" typescript setup
+let g:typescript_indent_disable = 1
+
 " fast scrolling in mac
 set ttyfast
