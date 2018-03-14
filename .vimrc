@@ -58,6 +58,8 @@ map <silent> <leader>v :source ~/.vimrc<cr>:filetype detect<cr>:exe ":echo 'vimr
 filetype plugin on
 filetype plugin indent on
 
+autocmd FileType python setlocal tabstop=2
+
 " Emmet settings
 let g:user_emmet_leader_key='<C-Z>'
 let g:user_emmet_mode='a'
@@ -98,10 +100,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'node_modules/.bin/eslint'
 
