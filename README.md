@@ -3,7 +3,7 @@ forked from cristianossd/myvimfiles
 
 ### Install
 ```
-git clone https://github.com/cristianossd/myvimfiles ~/.vim
+git clone https://github.com/dnovaes/myvimfiles ~/.vim
 cd ~/.vim
 git submodule update --init --recursive
 cp ~/.vim/.vimrc ~/.vimrc
