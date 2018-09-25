@@ -13,4 +13,8 @@ mv ~/.vim/.vimrc ~/.vimrc
 cd ~/.vim
 git submodule update \--init \--recursive
 
+# neovim
+mkdir -p ~/.config/nvim
+cp ~/.vim/init.vim ~/.config/nvim/.
+
 echo -e "\nVim files was successfully configured!"
