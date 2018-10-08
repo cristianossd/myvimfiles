@@ -55,6 +55,9 @@ map <D-[> <c-w>h
 map <D-]> <c-w>l
 map <silent> <leader>v :source ~/.vimrc<cr>:filetype detect<cr>:exe ":echo 'vimrc reloaded'"<cr>
 
+" clear search highlight
+map <C-L> :noh<CR>
+
 filetype plugin on
 filetype plugin indent on
 
