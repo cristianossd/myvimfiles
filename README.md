@@ -22,3 +22,8 @@ cp ~/.vim/.vimrc ~/.vimrc
 ### Colors
 
 - [Monochrome](https://github.com/fxn/vim-monochrome)
+
+##### More Info
+
+for more info explaining how to use git submodule you can check in this article from vogella
+https://www.vogella.com/tutorials/GitSubmodules/article.html
