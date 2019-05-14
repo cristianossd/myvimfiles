@@ -18,6 +18,7 @@ cp ~/.vim/.vimrc ~/.vimrc
 - [vim-airline](https://github.com/bling/vim-airline)
 - [Vim Better Whitespace](https://github.com/ntpeters/vim-better-whitespace)
 - [Vim-jsbeautify](https://github.com/maksimr/vim-jsbeautify) 
+- [vim-gitgutter](hhttps://github.com/airblade/vim-gitgutter)
 
 ### Colors
 
