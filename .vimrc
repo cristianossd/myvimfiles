@@ -62,6 +62,9 @@ filetype plugin on
 filetype plugin indent on
 
 autocmd FileType python setlocal tabstop=2
+autocmd FileType php setlocal tabstop=4
+
+au BufNewFile,BufRead *.ctp set filetype=html
 
 " Emmet settings
 let g:user_emmet_leader_key='<C-Z>'
@@ -69,7 +72,7 @@ let g:user_emmet_mode='a'
 
 " CtrlP settings
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_custom_ignore = '\v[\/](log|bower_components|tmp|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](log|bower_components|tmp|node_modules|target|dist|lib|build)|(\.(swp|ico|git|svn))$'
 
 " Indent
 set autoindent
@@ -106,21 +109,8 @@ set statusline+=%*
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'node_modules/.bin/eslint'
 
-" clojure setup
-let g:clojure_syntax_keywords = {
-    \ 'clojureMacro': ["defproject", "defcustom"],
-    \ 'clojureFunc': ["string/join", "string/replace"]
-    \ }
-let g:clojure_maxlines = 100
-let g:clojure_fuzzy_indent = 1
-let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let']
-let g:clojure_fuzzy_indent_blacklist = ['-fn$', '\v^with-%(meta|out-str|loading-context)$']
-let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn'
-let g:clojure_align_multiline_strings = 1
-let g:clojure_align_subforms = 1
-
-" typescript setup
-let g:typescript_indent_disable = 1
-
 " fast scrolling in mac
 set ttyfast
+
+" Typescript
+let g:syntastic_typescript_checkers = ['']
