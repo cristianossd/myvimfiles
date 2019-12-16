@@ -114,3 +114,7 @@ set ttyfast
 
 " Typescript
 let g:syntastic_typescript_checkers = ['']
+augroup SyntaxSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+augroup END
