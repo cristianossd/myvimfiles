@@ -44,6 +44,9 @@ set cursorline
 set showmatch
 set noswapfile
 
+"" use system clipboard
+set clipboard=unnamedplus
+
 " keyboard shortcuts
 inoremap jk <esc>
 let mapleader = ','
