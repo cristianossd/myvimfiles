@@ -1,5 +1,27 @@
-"" Pathogen config
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+" https://github.com/kien/ctrlp.vim
+Plug 'kien/ctrp.vim'
+" https://github.com/mattn/emmet-vim
+Plug 'mattn/emmet-vim'
+" https://github.com/vim-syntastic/syntastic
+" FIXME callback to configure syntastic
+Plug 'vim-syntastic/syntastic'
+" https://github.com/vim-airline/vim-airline
+" FIXME callback to configure airline
+Plug 'vim-airline/vim-airline'
+" https://github.com/ntpeters/vim-better-whitespace
+Plug 'ntpeters/vim-better-whitespace'
+" https://github.com/maksimr/vim-jsbeautify
+Plug 'maksimr/vim-jsbeautify'
+" https://github.com/fatih/vim-go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" https://github.com/prettier/vim-prettier
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" https://github.com/leafgarland/typescript-vim
+Plug 'leafgarland/typescript-vim'
+
+call plug#end()
 
 "" Setting colors for terminal
 set t_Co=256

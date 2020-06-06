@@ -1,17 +1,17 @@
 # !/bin/bash
 
+set -e
+
 # verifying if vim folder already exists
 if [ ! -d ~/.vim/ ]; then
   mkdir ~/.vim
 fi
 
-# cloning repository
-git clone https://github.com/cristianossd/myvimfiles.git ~/.vim
-mv ~/.vim/.vimrc ~/.vimrc
+# unix
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-# getting plugins
-cd ~/.vim
-git submodule update \--init \--recursive
+mv ~/.vim/.vimrc ~/.vimrc
 
 # neovim
 mkdir -p ~/.config/nvim
