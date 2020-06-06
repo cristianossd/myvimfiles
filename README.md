@@ -1,10 +1,14 @@
-# My vim files
+# myvimfiles
 
 ### Install
-    git clone https://github.com/cristianossd/myvimfiles ~/.vim
-    cd ~/.vim
-    git submodule update --init --recursive
-Now enjoy it!
+
+```bash
+$ git clone https://github.com/cristianossd/myvimfiles ~/.vim
+$ cd ~/.vim
+$ ./install.sh
+```
+
+Reload `.vimrc` and call `:PlugInstall`.
 
 ### Plugins
 
@@ -13,9 +17,8 @@ Now enjoy it!
 - [Syntastic](https://github.com/scrooloose/syntastic)
 - [vim-airline](https://github.com/bling/vim-airline)
 - [Vim Better Whitespace](https://github.com/ntpeters/vim-better-whitespace)
+- [vim-jsbeautify](https://github.com/maksimr/vim-jsbeautify)
 
 ### Colors
 
-- [Monochrome](https://github.com/fxn/vim-monochrome)
-
-I will improve it someday ... at least I think.
+- [Monochrome](https://github.com/cristianossd/vim-monochrome)
