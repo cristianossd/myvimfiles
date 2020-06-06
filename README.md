@@ -1,4 +1,4 @@
-# My vim files
+# myvimfiles
 
 ### Install
 
@@ -6,8 +6,9 @@
 $ git clone https://github.com/cristianossd/myvimfiles ~/.vim
 $ cd ~/.vim
 $ ./install.sh
+```
 
-Now enjoy it!
+Reload `.vimrc` and call `:PlugInstall`.
 
 ### Plugins
 
@@ -21,5 +22,3 @@ Now enjoy it!
 ### Colors
 
 - [Monochrome](https://github.com/cristianossd/vim-monochrome)
-
-I will improve it someday ... at least I think.

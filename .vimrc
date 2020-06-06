@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " https://github.com/kien/ctrlp.vim
-Plug 'kien/ctrp.vim'
+Plug 'kien/ctrlp.vim'
 " https://github.com/mattn/emmet-vim
 Plug 'mattn/emmet-vim'
 " https://github.com/vim-syntastic/syntastic
