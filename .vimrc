@@ -23,33 +23,53 @@ Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
-"" Setting colors for terminal
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Theme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" colors for terminal
 set t_Co=256
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => File settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set nowrap
-set expandtab " expand tabs to spaces
+" expand tabs to spaces
+set expandtab
 set smarttab
 set hidden
 
-set autoread " reload files when changed on disk, i.e. via `git checkout`
-set backspace=2 " fix broken backspace in some setups
-set backupcopy=yes " see :help crontab
-set clipboard=unnamed " yank and paste with the system clipboard
-set directory-=. " don't store swapfiles in the current directory
+" reload files when changed on disk, i.e. via `git checkout`
+set autoread
+" fix broken backspace in some setups
+set backspace=2
+" see :help crontab
+set backupcopy=yes
+" yank and paste with the system clipboard
+set clipboard=unnamed
+" don't store swapfiles in the current directory
+set directory-=.
 set encoding=utf-8
 
-" search sets
-set ignorecase " case-insensitive search
-set incsearch " search as you type
-set smartcase " case-sensitive search if any caps
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Search settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" case-insensitive search
+set ignorecase
+" search as you type
+set incsearch
+" case-sensitive search if any caps
+set smartcase
 
-set laststatus=2 " always show statusline
+" always show statusline
+set laststatus=2
 set listchars=trail:▫
-set number " show line numbers
-set ruler " show where you are
+" show line numbers
+set number
+" show where you are
+set ruler
 set wildignore=log/**,node_modules/**,bower_components/**,target/**,tmp/**,*.rbc,*.pyc
 set wildmode=longest,list,full
 
