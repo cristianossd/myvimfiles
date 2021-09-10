@@ -23,53 +23,33 @@ Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Theme
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" colors for terminal
+"" Setting colors for terminal
 set t_Co=256
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => File settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set nowrap
-" expand tabs to spaces
-set expandtab
+set expandtab " expand tabs to spaces
 set smarttab
 set hidden
 
-" reload files when changed on disk, i.e. via `git checkout`
-set autoread
-" fix broken backspace in some setups
-set backspace=2
-" see :help crontab
-set backupcopy=yes
-" yank and paste with the system clipboard
-set clipboard=unnamed
-" don't store swapfiles in the current directory
-set directory-=.
+set autoread " reload files when changed on disk, i.e. via `git checkout`
+set backspace=2 " fix broken backspace in some setups
+set backupcopy=yes " see :help crontab
+set clipboard=unnamed " yank and paste with the system clipboard
+set directory-=. " don't store swapfiles in the current directory
 set encoding=utf-8
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Search settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" case-insensitive search
-set ignorecase
-" search as you type
-set incsearch
-" case-sensitive search if any caps
-set smartcase
+" search sets
+set ignorecase " case-insensitive search
+set incsearch " search as you type
+set smartcase " case-sensitive search if any caps
 
-" always show statusline
-set laststatus=2
+set laststatus=2 " always show statusline
 set listchars=trail:▫
-" show line numbers
-set number
-" show where you are
-set ruler
+set number " show line numbers
+set ruler " show where you are
 set wildignore=log/**,node_modules/**,bower_components/**,target/**,tmp/**,*.rbc,*.pyc
 set wildmode=longest,list,full
 
@@ -108,6 +88,7 @@ filetype plugin indent on
 
 autocmd FileType python setlocal tabstop=2
 autocmd FileType php setlocal tabstop=4
+autocmd FileType go setlocal tabstop=4
 
 au BufNewFile,BufRead *.ctp set filetype=html
 
@@ -163,3 +144,5 @@ augroup SyntaxSettings
     autocmd!
     autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 augroup END
+
+set mmp=2000
