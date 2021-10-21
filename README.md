@@ -19,6 +19,7 @@ cp ~/.vim/.vimrc ~/.vimrc
 - [Vim Better Whitespace](https://github.com/ntpeters/vim-better-whitespace)
 - [Vim-jsbeautify](https://github.com/maksimr/vim-jsbeautify) 
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [OmniCppComplete](https://github.com/vim-scripts/OmniCppComplete)
 
 ### Colors
 
